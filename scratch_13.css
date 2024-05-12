@@ -1,0 +1,45 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+h1 {
+  color: SeaGreen;
+}
+#add-task-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#new-task-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+li:last-child {
+  border-bottom: none;
+}
+button {
+  padding: 10px;
+  background-color: SeaGreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #ccc;
+  color: SeaGreen;
+}
