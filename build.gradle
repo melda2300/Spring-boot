@@ -3,7 +3,6 @@ plugins {
 	id 'org.springframework.boot' version '3.2.5'
 	id 'io.spring.dependency-management' version '1.1.4'
 }
-
 group = 'com.example.UniversityApplication'
 version = '0.0.1-SNAPSHOT'
 
@@ -22,6 +21,7 @@ repositories {
 }
 
 dependencies {
+	runtimeOnly 'com.h2database:h2'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-web'

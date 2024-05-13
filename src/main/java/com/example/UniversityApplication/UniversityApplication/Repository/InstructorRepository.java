@@ -1,7 +1,6 @@
-package com.example.demo.Repository;
+package com.example.UniversityApplication.UniversityApplication.Repository;
 
-import com.example.demo.Class.Course;
-import com.example.demo.Class.Instructor;
+import com.example.UniversityApplication.UniversityApplication.Class.Instructor;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface InstructorRepository extends JpaRepository<Instructor,Long> {
