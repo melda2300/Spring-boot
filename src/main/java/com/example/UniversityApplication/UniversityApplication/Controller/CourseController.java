@@ -14,15 +14,17 @@ public class CourseController {
     private CourseService courseService;
 
     @GetMapping
-    public List<Course> getAllCourses(){
+    public List<Course> getAllCourses() {
         return courseService.getAllCourses();
     }
+
     @GetMapping(name = "/{id}")
-    public Course getCoursesById( @PathVariable Long id){
+    public Course getCoursesById( @PathVariable Long id ) {
         return courseService.getCourseById(id);
     }
+
     @PostMapping
-    public Course createCourse(@RequestBody Course course){
-        return  courseService.createCourse(course);
+    public Course createCourse( @RequestBody Course course ) {
+        return courseService.createCourse(course);
     }
 }
