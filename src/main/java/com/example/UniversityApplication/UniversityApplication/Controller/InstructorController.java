@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(name = "/Instructor")
+@RequestMapping("/Instructor")
 public class InstructorController {
     @Autowired
     private InstructorService instructorService;
@@ -18,7 +18,7 @@ public class InstructorController {
         return instructorService.getAllInstructor();
     }
 
-    @GetMapping(name = "/{id")
+    @GetMapping("/{id}")
     private Instructor getInstructorById( @PathVariable Long id ) {
         return instructorService.getInstructorById(id);
     }
