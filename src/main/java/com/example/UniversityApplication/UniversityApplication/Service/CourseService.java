@@ -20,7 +20,7 @@ public class CourseService {
         return courseRepository.findById(id).orElseThrow();
     }
 
-    public Course createCourse(Course course) {
+    public Course createCourse( Course course) {
         return courseRepository.save(course);
     }
 }
