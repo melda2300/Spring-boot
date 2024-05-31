@@ -2,7 +2,7 @@ package com.example.UniversityApplication.UniversityApplication.Dto;
 
 import java.io.Serializable;
 
-public class SutudentDto implements Serializable {
+public class StudentDto implements Serializable {
     private Long id;
     private String firstName;
     private String lastName;

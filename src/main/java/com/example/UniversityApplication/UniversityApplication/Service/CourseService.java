@@ -12,15 +12,7 @@ public class CourseService {
     @Autowired
     private CourseRepository courseRepository;
 
-    public List<Course> getAllCourses() {
+    public List<Course> getCourses() {
         return courseRepository.findAll();
-    }
-
-    public Course getCourseById(Long id) {
-        return courseRepository.findById(id).orElseThrow();
-    }
-
-    public Course createCourse( Course course) {
-        return courseRepository.save(course);
     }
 }
