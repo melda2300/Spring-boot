@@ -17,4 +17,5 @@ public class Instructor {
     private String email;
     @OneToMany(mappedBy = "instructor")
     private List<Course>courses;
+
 }
